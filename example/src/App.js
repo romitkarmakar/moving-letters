@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-
-import ExampleComponent from 'moving-letters'
+import "./index.css";
+import { SunnyMorning, GreatThings, BeautifulQuestions, SignalNoise } from 'moving-letters'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <SunnyMorning text='Sunny Morning' />
+        <GreatThings text='Great Things' />
+        <BeautifulQuestions text="Beautiful Questions" />
+        <SignalNoise />
       </div>
     )
   }
