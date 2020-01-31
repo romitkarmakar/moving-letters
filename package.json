@@ -1,6 +1,6 @@
 {
   "name": "moving-letters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A animejs powered react library to create text animations.",
   "author": "romitkarmakar",
   "license": "MIT",

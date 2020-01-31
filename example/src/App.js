@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./index.css";
-import { SunnyMorning, GreatThings, BeautifulQuestions, SignalNoise } from 'moving-letters'
+import { GreatThings, BeautifulQuestions, SignalNoise, Thursday, ReadySetGo, SunnyMorning } from 'moving-letters'
 
 export default class App extends Component {
   render () {
@@ -10,6 +10,8 @@ export default class App extends Component {
         <GreatThings text='Great Things' />
         <BeautifulQuestions text="Beautiful Questions" />
         <SignalNoise />
+        <Thursday />
+        <ReadySetGo text="Ready Set Go Start" />
       </div>
     )
   }

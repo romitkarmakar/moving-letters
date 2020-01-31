@@ -1,6 +1,7 @@
-# moving-letters
+# Moving Letters
 
 > A animejs powered react library to create text animations.
+Inspired by the works of [Tobia Sahlin Moving Letters](https://tobiasahlin.com/moving-letters/).
 
 [![NPM](https://img.shields.io/npm/v/moving-letters.svg)](https://www.npmjs.com/package/moving-letters) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -14,17 +15,27 @@ npm install --save moving-letters
 
 ```jsx
 import React, { Component } from 'react'
+import { GreatThings, BeautifulQuestions, SignalNoise, Thursday, ReadySetGo, SunnyMorning } from 'moving-letters'
 
-import MyComponent from 'moving-letters'
-
-class Example extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MyComponent />
+      <React.Fragment>
+        <SunnyMorning text='Sunny Morning' />
+        <GreatThings text='Great Things' />
+        <BeautifulQuestions text="Beautiful Questions" />
+        <SignalNoise text='Signal Noise'/>
+        <Thursday text='Thursday'/>
+        <ReadySetGo text='Ready Set Go'/>
+      </React.Fragment>
     )
   }
 }
 ```
+
+# Demo
+
+You can check the demo at http://vegotube.me/moving-letters/
 
 ## License
 
