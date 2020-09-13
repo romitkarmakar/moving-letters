@@ -35,7 +35,7 @@ export default class App extends Component {
 
 # Demo
 
-You can check the demo at http://vegotube.me/moving-letters/
+You can check the demo at https://romitkarmakar.github.io/moving-letters/
 
 ## License
 
