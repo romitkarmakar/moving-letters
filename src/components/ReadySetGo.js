@@ -1,20 +1,24 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import anime from "animejs";
+import React, { Component } from 'react'
+import anime from 'animejs'
+import PropTypes from 'prop-types'
 
 export class ReadySetGo extends Component {
+  static propTypes = {
+    text: PropTypes.string
+  };
+
   componentDidMount() {
-    var ml4 = {};
-    ml4.opacityIn = [0, 1];
-    ml4.scaleIn = [0.2, 1];
-    ml4.scaleOut = 3;
-    ml4.durationIn = 800;
-    ml4.durationOut = 600;
-    ml4.delay = 500;
+    var ml4 = {}
+    ml4.opacityIn = [0, 1]
+    ml4.scaleIn = [0.2, 1]
+    ml4.scaleOut = 3
+    ml4.durationIn = 800
+    ml4.durationOut = 600
+    ml4.delay = 500
 
-    var animation = anime.timeline({ loop: true });
+    var animation = anime.timeline({ loop: true })
 
-    for (let i = 0; i < this.props.text.split(" ").length; i++) {
+    for (let i = 0; i < this.props.text.split(' ').length; i++) {
       animation
         .add({
           targets: `.ml4 .letters-${i + 1}`,
@@ -27,19 +31,19 @@ export class ReadySetGo extends Component {
           opacity: 0,
           scale: ml4.scaleOut,
           duration: ml4.durationOut,
-          easing: "easeInExpo",
+          easing: 'easeInExpo',
           delay: ml4.delay
-        });
+        })
     }
   }
 
   render() {
     return (
-      <h1 className="ml4">
-        {this.props.text.split(" ").map((v, index) => (
+      <h1 className='ml4'>
+        {this.props.text.split(' ').map((v, index) => (
           <span className={`letters letters-${index + 1}`}>{v}</span>
         ))}
       </h1>
-    );
+    )
   }
 }
