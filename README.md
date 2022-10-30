@@ -10,6 +10,10 @@ Inspired by the works of [Tobia Sahlin Moving Letters](https://tobiasahlin.com/m
 ```bash
 npm install --save moving-letters
 ```
+or
+```bash
+yarn add moving-letters
+```
 
 ## Usage
 
