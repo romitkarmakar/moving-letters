@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.0103c194.css",
-  "main.css.map": "static/css/main.0103c194.css.map",
-  "main.js": "static/js/main.2343d85a.js",
-  "main.js.map": "static/js/main.2343d85a.js.map"
+  "files": {
+    "main.css": "/moving-letters/static/css/main.f2ce678b.css",
+    "main.js": "/moving-letters/static/js/main.5bad72f9.js",
+    "index.html": "/moving-letters/index.html",
+    "main.f2ce678b.css.map": "/moving-letters/static/css/main.f2ce678b.css.map",
+    "main.5bad72f9.js.map": "/moving-letters/static/js/main.5bad72f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2ce678b.css",
+    "static/js/main.5bad72f9.js"
+  ]
 }
