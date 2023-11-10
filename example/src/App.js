@@ -9,8 +9,8 @@ export default class App extends Component {
         <SunnyMorning text='Sunny Morning' />
         <GreatThings text='Great Things' />
         <BeautifulQuestions text="Beautiful Questions" />
-        <SignalNoise />
-        <Thursday />
+        <SignalNoise text1="Signal" text2="Noise" />
+        <Thursday text="Thursday" />
         <ReadySetGo text="Ready Set Go Start" />
       </div>
     )
